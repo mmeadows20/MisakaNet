@@ -7,6 +7,52 @@ All notable changes to the Misaka Network project are documented here.
 
 ---
 
+## [2.49.0](https://github.com/Ikalus1988/MisakaNet/compare/v2.48.0...v2.49.0) (2026-10-20)
+
+
+### Features
+
+* govern homepage Quickstart commands and tool count with a site-facts SSOT ([#3479](https://github.com/Ikalus1988/MisakaNet/issues/3479)) ([5096384](https://github.com/Ikalus1988/MisakaNet/commit/5096384d8975c2ea0ea454524b0136355b81e4db))
+* **lessons:** adopt eleven bounty lessons, and add "video" to the domain vocabulary ([#3485](https://github.com/Ikalus1988/MisakaNet/issues/3485)) ([ec699e2](https://github.com/Ikalus1988/MisakaNet/commit/ec699e289ab7b56878bab3531b936336dac27ae0))
+* **quickstart:** copy buttons per code block, per-step self-checks ([#3494](https://github.com/Ikalus1988/MisakaNet/issues/3494)) ([a0bb02a](https://github.com/Ikalus1988/MisakaNet/commit/a0bb02aabdcbd3b963eeb47467e6a5992d229fc4)), closes [#1893](https://github.com/Ikalus1988/MisakaNet/issues/1893)
+* **site:** one source for the design tokens ([#3541](https://github.com/Ikalus1988/MisakaNet/issues/3541), batch V) ([#3591](https://github.com/Ikalus1988/MisakaNet/issues/3591)) ([8fc9bf9](https://github.com/Ikalus1988/MisakaNet/commit/8fc9bf9b96c0823b62129bdd8baa6ba5f21e7332))
+* **site:** the halos, the colour bars and the purple ([#3541](https://github.com/Ikalus1988/MisakaNet/issues/3541), batch X) ([#3593](https://github.com/Ikalus1988/MisakaNet/issues/3593)) ([d059b7d](https://github.com/Ikalus1988/MisakaNet/commit/d059b7d62215841dbfd7a17fcccf50adb1b46b6d))
+* **site:** the hand-written pages use the vocabulary ([#3541](https://github.com/Ikalus1988/MisakaNet/issues/3541), batch W) ([#3592](https://github.com/Ikalus1988/MisakaNet/issues/3592)) ([b89deee](https://github.com/Ikalus1988/MisakaNet/commit/b89deee01d545adbcc8b70dfa02ca7d3266cff24))
+* **site:** the icons are Lucide SVG, not emoji ([#3541](https://github.com/Ikalus1988/MisakaNet/issues/3541), batch Y) ([#3596](https://github.com/Ikalus1988/MisakaNet/issues/3596)) ([dedc9e5](https://github.com/Ikalus1988/MisakaNet/commit/dedc9e5a7701379962547a591cc1cc499e4f3b82))
+
+
+### Bug Fixes
+
+* a degraded read must not be reported as an empty corpus ([#3512](https://github.com/Ikalus1988/MisakaNet/issues/3512)) ([898a63b](https://github.com/Ikalus1988/MisakaNet/commit/898a63b3f833bdbe3b6c1670bc5ceff4439fe441))
+* **activity:** a day the store refused is drawn as missing, not as zero ([#3551](https://github.com/Ikalus1988/MisakaNet/issues/3551)) ([b656f7f](https://github.com/Ikalus1988/MisakaNet/commit/b656f7f7c6798529b3392846404545c9a5482cac))
+* **automation:** three reds, one cause (D1's free tier) and one standing defect ([#3450](https://github.com/Ikalus1988/MisakaNet/issues/3450)) ([030b203](https://github.com/Ikalus1988/MisakaNet/commit/030b2031ea81a7998943c67a2ec4c809aeeade48))
+* **backup:** export table by table — `--no-schema` alone does not dodge the FTS5 refusal ([#3452](https://github.com/Ikalus1988/MisakaNet/issues/3452)) ([72aaa6c](https://github.com/Ikalus1988/MisakaNet/commit/72aaa6c3bd37ac48a2aaf6356048eb599b020f55))
+* **codeql:** keep generated lesson artefacts out of the secret query ([#3488](https://github.com/Ikalus1988/MisakaNet/issues/3488)) ([13446fc](https://github.com/Ikalus1988/MisakaNet/commit/13446fc50b98f47fd32ca4f9688b1a05d84d53a1))
+* **heal:** refuse to write a fixture whose signature carries a credential ([#3493](https://github.com/Ikalus1988/MisakaNet/issues/3493)) ([a9c59fb](https://github.com/Ikalus1988/MisakaNet/commit/a9c59fb0ef0c92f89b5ccedb2d43fbe0c485e5e5))
+* **mcp:** the preflight schema says it needs a Bearer token, not just its error ([#3497](https://github.com/Ikalus1988/MisakaNet/issues/3497)) ([b0ef5c7](https://github.com/Ikalus1988/MisakaNet/commit/b0ef5c7f020091c6eb469d0db47df3a495d3cb48))
+* the six verified severe defects from [#1775](https://github.com/Ikalus1988/MisakaNet/issues/1775) ([#3478](https://github.com/Ikalus1988/MisakaNet/issues/3478)) ([00befab](https://github.com/Ikalus1988/MisakaNet/commit/00befab068d9e9147fac95e9315b33f8c5b804a3))
+* the stdio receipt must say where the report went, and the preview button was dead ([#3585](https://github.com/Ikalus1988/MisakaNet/issues/3585)) ([6e382dd](https://github.com/Ikalus1988/MisakaNet/commit/6e382dd7b86abb952141200cc806ca284c7f0de5))
+* **worker:** a traffic counter is D1 plus KV, not D1 or KV ([#3549](https://github.com/Ikalus1988/MisakaNet/issues/3549)) ([be3e38a](https://github.com/Ikalus1988/MisakaNet/commit/be3e38a537a53d0664c9122278447f730a4aa2b7))
+* **worker:** the account was spending 8x its free-tier row-read budget on two public endpoints ([#3590](https://github.com/Ikalus1988/MisakaNet/issues/3590)) ([1225e9e](https://github.com/Ikalus1988/MisakaNet/commit/1225e9e62bc52d6eb2abc934878a033f10495445))
+
+
+### Documentation
+
+* align the intro with what the installer, the worker and the fields actually say ([#3500](https://github.com/Ikalus1988/MisakaNet/issues/3500)) ([f781e30](https://github.com/Ikalus1988/MisakaNet/commit/f781e3041c4117565814fb11654c3f85fba56615))
+* **codeql:** correct which tool produced the sixteen secret alerts ([#3490](https://github.com/Ikalus1988/MisakaNet/issues/3490)) ([26154ef](https://github.com/Ikalus1988/MisakaNet/commit/26154efb866201c9f25fedafe0b591723043f70a))
+* **start:** wire Quickstart track A to /start and back-link to Quickstart (fix [#1896](https://github.com/Ikalus1988/MisakaNet/issues/1896)) ([#3473](https://github.com/Ikalus1988/MisakaNet/issues/3473)) ([6699a3b](https://github.com/Ikalus1988/MisakaNet/commit/6699a3b571d4b322da28ad1c181a2ddd98deb630))
+* **worker:** the CDN serves a cached entry to a request that carries credentials ([#3594](https://github.com/Ikalus1988/MisakaNet/issues/3594)) ([13070e4](https://github.com/Ikalus1988/MisakaNet/commit/13070e42f3d0c317f639c03b99fb1fb9c9a957ad))
+
+
+### Tests
+
+* **site:** lock Quickstart copy to data-i18n and keep zh from shipping English ([#3475](https://github.com/Ikalus1988/MisakaNet/issues/3475)) ([11887f1](https://github.com/Ikalus1988/MisakaNet/commit/11887f18ad3d930b514bf91e2d8e21ddf83821ae))
+
+
+### Lessons
+
+* convert intake [#3339](https://github.com/Ikalus1988/MisakaNet/issues/3339) (proxy the shell never inherited) and [#3470](https://github.com/Ikalus1988/MisakaNet/issues/3470) (a disable nobody verified) ([#3501](https://github.com/Ikalus1988/MisakaNet/issues/3501)) ([916650c](https://github.com/Ikalus1988/MisakaNet/commit/916650c1b43aba72c289b6691ce68470e30ebd12))
+
 ## [2.48.0](https://github.com/Ikalus1988/MisakaNet/compare/v2.47.0...v2.48.0) (2026-10-17)
 
 
